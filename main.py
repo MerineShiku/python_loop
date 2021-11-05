@@ -67,8 +67,94 @@ i = 105
 while i >= 7:
   print(i, end = " ,")
   i -=7
+print()
 
 '''  
 Q5. Write a program to print first 10 natural number in reverse order using while loop.
 
 '''
+n = 10
+while n >=1:
+  print(n, end =",")
+  n -= 1
+print()
+
+'''  
+Write a program to print sum of first 10 Natural numbers.
+
+'''
+
+num = 10
+sum = 0
+while num >=1:
+  sum +=num
+  num -=1
+  print(sum)
+
+
+#Q7. Write a program to print sum of first 10 Even numbers.
+
+
+num = 2
+sum = 0
+while num <= 20:
+   sum = sum + num
+   num= num + 2
+print(sum)
+
+
+'''
+Q10. Write a program to check whether a number is prime or not using while loop.
+
+'''
+
+num1 = int(input("Enter any number : "))
+k=0
+if num1 == 0 or num1 == 1:
+    print("Not a prime number ")
+else:
+   i = 2
+   while(i<num1):
+     if num1 % i == 0:
+       k = k+1
+     i = i+1
+if k == 0 :
+        print( num1,"is prime number")
+else:
+        print(num1, "is not prime number")
+
+# Program to show the use of break statement inside loops 
+#break and stops
+
+i = 1
+while i <=10:
+  i +=1
+  if i == 5:
+    break
+  print (i, end = "")
+print()
+
+
+# Another example for break statement inside loops 
+
+for  i in range (1, 10):
+     if i==3: 
+      break
+     print(i)
+
+
+
+# Program to show the use of continue statement inside loops
+#skips and continue
+
+i = 0
+while i < 10:
+  i +=1
+  if i == 4:
+    continue
+  print (i)
+
+
+
+
+
